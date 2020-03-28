@@ -1,0 +1,105 @@
+.side {
+  flex-grow: 1;
+  display: flex;
+  background-color: #fff;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 4px 8px #ddd;
+  padding: 24px;
+  z-index: 1;
+}
+
+.side__container {
+  display: flex;
+  min-width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.side__form {
+  min-width: 100%;
+}
+
+.side__form__input {
+  background-color: #f6f6f7;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  min-width: 100%;
+  font-size: 1.1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.side__form__input::placeholder {
+  font-size: 1.1rem;
+}
+
+.side__forecast {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side__forecast__location {
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 16px 0;
+  color: #6d6d6d;
+}
+
+.side__forecast__temperature {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.temperature {
+  font-size: 4rem;
+}
+
+.temperature__unit {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+}
+
+.side__forecast__statistic {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  background-color: #f3f3f3;
+  justify-content: center;
+}
+
+.result__type {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.side__forecast__body {
+  background-color: #b590ca;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.side__forecast__summary {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #6d6d66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side__forecast__summary p {
+  padding: 2rem 0;
+}

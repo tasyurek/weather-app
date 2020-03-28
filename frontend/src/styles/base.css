@@ -1,0 +1,68 @@
+:root {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: rgb(185, 185, 185);
+}
+
+.icon {
+  width: 25%;
+  color: #ffffff;
+  max-width: 25%;
+  padding: 2rem 0 0 0;
+}
+
+.icon-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon--highlight {
+  width: 3.2rem;
+  color: #b590ca;
+}
+
+.icon--spinner {
+  color: #b590ca;
+  width: 2rem;
+  margin: auto;
+  animation: spinner 2s infinite;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.units__settings,
+.lang__settings {
+  background-color: #f6f6f7;
+  font-weight: 600;
+  border: none;
+  border-radius: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+  outline: none;
+}
+
+.units__settings:hover,
+.lang__settings:hover {
+  background-color: #b590ca;
+  color: white;
+}
+
+.active {
+  background-color: #b590ca;
+  color: white;
+}
