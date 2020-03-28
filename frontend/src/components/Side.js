@@ -22,12 +22,7 @@ class Side extends Component {
     const address = this.state.address && "sivas";
 
     axios
-      .get(
-        "http://localhost:3000/weather?address=" +
-          address +
-          "&units=si" +
-          "&lang=en"
-      )
+      .get("/weather?address=" + address + "&units=si" + "&lang=en")
       .then(res => {
         //console.log(res);
         this.props.dispatch(setWeather(res.data));
@@ -48,6 +43,9 @@ class Side extends Component {
             onChange={this.onSearchInputChange}
             placeholder="Search for locations..."
           />
+          <button className="side__form__button" type="submit">
+            Search
+          </button>
         </form>
 
         {this.props.weatherData.location !== undefined ? (
@@ -82,9 +80,7 @@ class Side extends Component {
                 </p>
               </div>
             </div>
-          ) : (
-            <p>Enter location</p>
-          )
+          ) : null
         ) : (
           <SpinnerSVG className="icon--spinner" />
         )}

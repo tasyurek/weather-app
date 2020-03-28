@@ -7,3 +7,10 @@
   border: 1px solid #c3c3c3;
   display: flex;
 }
+
+@media (max-width: 600px) {
+  .App {
+    display: block;
+    padding: 0;
+  }
+}

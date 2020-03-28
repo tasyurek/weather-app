@@ -59,3 +59,39 @@
 .settings__language h3 {
   min-width: 25%;
 }
+@media (max-width: 600px) {
+  .main {
+    padding: 1rem 0;
+  }
+
+  .main__highlights,
+  .settings {
+    display: block;
+    border-radius: 0;
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .main__highlight {
+    border-radius: 0;
+    padding: 1rem 0;
+    margin: 0;
+    margin-top: 1rem;
+  }
+
+  .settings__units,
+  .settings__language {
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100%;
+    align-items: center;
+    border-radius: 0;
+    padding: 1rem 0;
+  }
+
+  .button-groups {
+    display: flex;
+    min-width: 100%;
+    justify-content: space-evenly;
+  }
+}

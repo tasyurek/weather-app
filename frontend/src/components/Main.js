@@ -32,12 +32,7 @@ const Main = props => {
     }
 
     const url =
-      "http://localhost:3000/weather?address=" +
-      address +
-      "&units=" +
-      units +
-      "&lang=" +
-      lang;
+      "/weather?address=" + address + "&units=" + units + "&lang=" + lang;
 
     axios
       .get(url)

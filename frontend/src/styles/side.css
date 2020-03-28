@@ -22,6 +22,7 @@
 }
 
 .side__form__input {
+  text-align: center;
   background-color: #f6f6f7;
   outline: none;
   border: none;
@@ -29,7 +30,17 @@
   min-width: 100%;
   font-size: 1.1rem;
   padding: 1rem;
-  border-radius: 1rem;
+}
+
+.side__form__button {
+  border: none;
+  background-color: #b590ca;
+  min-width: 100%;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+
+  cursor: pointer;
 }
 
 .side__form__input::placeholder {
