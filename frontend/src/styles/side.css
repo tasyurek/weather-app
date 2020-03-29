@@ -8,6 +8,7 @@
   box-shadow: 4px 4px 8px #ddd;
   padding: 24px;
   z-index: 1;
+  max-width: 100%;
 }
 
 .side__container {

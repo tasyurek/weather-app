@@ -99,21 +99,21 @@ const Main = props => {
         <div className="main__highlight">
           <HumiditySVG className="icon--highlight" />
           <div className="highlight__info">
-            <h3>Humidity</h3>
+            {lang === "en" ? <h3>{humidity}</h3> : <h3>Nem</h3>}
             {humidity ? <p>{humidity}</p> : <p>0.0</p>}
           </div>
         </div>
         <div className="main__highlight">
           <PressureSVG className="icon--highlight" />
           <div className="highlight__info">
-            <h3>Pressure</h3>
+            {lang === "en" ? <h3>{pressure}</h3> : <h3>Basınç</h3>}
             {pressure ? <p>{pressure}</p> : <p>0.0</p>}
           </div>
         </div>
         <div className="main__highlight">
           <WindSpeedSVG className="icon--highlight" />
           <div className="highlight__info">
-            <h3>Wind Speed</h3>
+            {lang === "en" ? <h3>{windSpeed}</h3> : <h3>Rüzgar Hızı</h3>}
             {windSpeed ? <p>{windSpeed}</p> : <p>0.0</p>}
           </div>
         </div>
@@ -122,21 +122,21 @@ const Main = props => {
         <div className="main__highlight">
           <VisibilitySVG className="icon--highlight" />
           <div className="highlight__info">
-            <h3>Visibility</h3>
+            {lang === "en" ? <h3>{visibility}</h3> : <h3>Görüş</h3>}
             {visibility ? <p>{visibility}</p> : <p>0.0</p>}
           </div>
         </div>
         <div className="main__highlight">
           <UVIndexSVG className="icon--highlight" />
           <div className="highlight__info">
-            <h3>UV Index</h3>
+            {lang === "en" ? <h3>{uvIndex}</h3> : <h3>UV İndeksi</h3>}
             {uvIndex ? <p>{uvIndex}</p> : <p>0.0</p>}
           </div>
         </div>
         <div className="main__highlight">
           <OzoneSVG className="icon--highlight" />
           <div className="highlight__info">
-            <h3>Ozone</h3>
+            {lang === "en" ? <h3>{ozone}</h3> : <h3>Ozon</h3>}
             {ozone ? <p>{ozone}</p> : <p>0.0</p>}
           </div>
         </div>
