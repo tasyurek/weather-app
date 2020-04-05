@@ -68,10 +68,14 @@ const Main = props => {
   return (
     <div className="main">
       <div className="main__settings">
-        <h2>Settings</h2>
+        {lang === "en" ? <h2>Settings</h2> : <h2>Ayarlar</h2>}
         <div className="settings">
           <div className="settings__units">
-            <h3>Temperature Units</h3>
+            {lang === "en" ? (
+              <h3>Temperature Units</h3>
+            ) : (
+              <h3>Sıcaklık Birimi</h3>
+            )}
             <div className="button-groups">
               <button className={siUnitClass()} onClick={() => setUnits("si")}>
                 C
@@ -82,7 +86,7 @@ const Main = props => {
             </div>
           </div>
           <div className="settings__language">
-            <h3>Language</h3>
+            {lang === "en" ? <h3>Language</h3> : <h3>Dil</h3>}
             <div className="button-groups">
               <button className={trLangClass()} onClick={() => setLang("tr")}>
                 TR
@@ -94,26 +98,26 @@ const Main = props => {
           </div>
         </div>
       </div>
-      <h2>Today Hightlights</h2>
+      {lang === "en" ? <h2>Today Hightlights</h2> : <h2>Günün Değerleri</h2>}
       <div className="main__highlights">
         <div className="main__highlight">
           <HumiditySVG className="icon--highlight" />
           <div className="highlight__info">
-            {lang === "en" ? <h3>{humidity}</h3> : <h3>Nem</h3>}
+            {lang === "en" ? <h3>Humidity</h3> : <h3>Nem</h3>}
             {humidity ? <p>{humidity}</p> : <p>0.0</p>}
           </div>
         </div>
         <div className="main__highlight">
           <PressureSVG className="icon--highlight" />
           <div className="highlight__info">
-            {lang === "en" ? <h3>{pressure}</h3> : <h3>Basınç</h3>}
+            {lang === "en" ? <h3>Pressure</h3> : <h3>Basınç</h3>}
             {pressure ? <p>{pressure}</p> : <p>0.0</p>}
           </div>
         </div>
         <div className="main__highlight">
           <WindSpeedSVG className="icon--highlight" />
           <div className="highlight__info">
-            {lang === "en" ? <h3>{windSpeed}</h3> : <h3>Rüzgar Hızı</h3>}
+            {lang === "en" ? <h3>Wind Speed</h3> : <h3>Rüzgar Hızı</h3>}
             {windSpeed ? <p>{windSpeed}</p> : <p>0.0</p>}
           </div>
         </div>
@@ -122,21 +126,21 @@ const Main = props => {
         <div className="main__highlight">
           <VisibilitySVG className="icon--highlight" />
           <div className="highlight__info">
-            {lang === "en" ? <h3>{visibility}</h3> : <h3>Görüş</h3>}
+            {lang === "en" ? <h3>Visibility</h3> : <h3>Görüş</h3>}
             {visibility ? <p>{visibility}</p> : <p>0.0</p>}
           </div>
         </div>
         <div className="main__highlight">
           <UVIndexSVG className="icon--highlight" />
           <div className="highlight__info">
-            {lang === "en" ? <h3>{uvIndex}</h3> : <h3>UV İndeksi</h3>}
+            {lang === "en" ? <h3>UV Index</h3> : <h3>UV İndeksi</h3>}
             {uvIndex ? <p>{uvIndex}</p> : <p>0.0</p>}
           </div>
         </div>
         <div className="main__highlight">
           <OzoneSVG className="icon--highlight" />
           <div className="highlight__info">
-            {lang === "en" ? <h3>{ozone}</h3> : <h3>Ozon</h3>}
+            {lang === "en" ? <h3>Ozone</h3> : <h3>Ozon</h3>}
             {ozone ? <p>{ozone}</p> : <p>0.0</p>}
           </div>
         </div>
